@@ -323,12 +323,13 @@
             </div>
          </div>
       </footer>
-
-      <a href="" class="scrollup" id="scroll-up">
+      <!-- <a href="" class="scrollup" id="scroll-up">
          <i class="ri-arrow-up-line"></i>
-      </a> 
+      </a>  -->
+      <!-- <button onclick="topFunction()" id="btn-top" title="Go to top" class="scrollup"><i class="ri-arrow-up-line"></i></button> -->
+      <button type="button" class="btn btn-floating btn-lg back-to-top" id="bbtt" title="back"><i class="ri-arrow-up-line"></i></button>
 
-      <script src="assets/js/scrollreveal.min.js"></script>
+      <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
 
       <script src="assets/js/main.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -366,6 +367,52 @@
       window.onload = function () {
          typeWriter();
       };
+
+      window.onscroll = function() {
+            toggleButtonVisibility();
+        };
+
+        let mybutton = document.getElementById("bbtt");
+         if (mybutton) {
+            mybutton.style.display = "none";
+         }
+         window.onscroll = function () {
+            scrollFunction();
+         };
+         function scrollFunction() {
+            if (
+               document.body.scrollTop > 20 ||
+               document.documentElement.scrollTop > 20
+            ) {
+               mybutton.style.display = "block";
+            } else {
+               mybutton.style.display = "none";
+            }
+         }
+         if (mybutton) {
+            mybutton.addEventListener("click", backToTop);
+         }
+         function backToTop() {
+            document.documentElement.scrollTo({
+               top: 0,
+               behavior: 'smooth'
+            });
+         }
+
+      //   function toggleButtonVisibility() {
+      //       var mybutton = document.getElementById("btn-top");
+      //       if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+      //           mybutton.style.display = "block";
+      //       } else {
+      //           mybutton.style.display = "none";
+      //       }
+      //   }
+      //   function topFunction() {
+      //       window.scrollTo({
+      //           top: 0,
+      //           behavior: "smooth"
+      //       });
+      //   }
       </script>
    </body>
 </html>
