@@ -48,13 +48,32 @@ const scrollActive = () =>{
 		}                                                    
 	})
 }
-window.addEventListener('scroll', scrollActive)
 
-const scrollUp = () =>{
-	const scrollUp = document.getElementById('scroll-up')
-	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
-						: scrollUp.classList.remove('show-scroll')
-}
-window.addEventListener('scroll', scrollUp)
+// let mybutton = document.getElementById("btn-top");
 
+// window.onscroll = function() {
+//     toggleButtonVisibility();
+// };
 
+// function toggleButtonVisibility() {
+//     if (window.scrollY > 30) {
+//         mybutton.style.display = "block";
+//     } else {
+//         mybutton.style.display = "none";
+//     }
+// }
+
+// function topFunction() {
+//     document.body.style.scrollBehavior = "smooth";
+//     document.documentElement.style.scrollBehavior = "smooth";
+
+//     window.scrollTo({
+//         top: 0,
+//         behavior: "smooth"
+//     });
+//     mybutton.addEventListener('transitionend', function() {
+//         document.body.style.scrollBehavior = "auto";
+//         document.documentElement.style.scrollBehavior = "auto";
+//         mybutton.removeEventListener('transitionend', arguments.callee);
+//     });
+// }
