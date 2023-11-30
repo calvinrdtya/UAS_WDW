@@ -12,7 +12,7 @@
       <link rel="stylesheet" href="assets/css/styles.css">
       <script src="assets/js/function.js"></script>
 
-      <title>BudayaKita</title>
+      <title>BudayaKu</title>
    </head>
    <body>
       <header class="header" id="header">
@@ -26,13 +26,17 @@
                      <a href="index.html" class="nav_link">Home</a>
                   </li>
                   <li class="nav_item">
-                     <a href="#artikel" class="nav_link">Artikel</a>
+                     <a href="" class="nav_link">Artikel</a>
                   </li>
                   <li class="nav_item">
                      <a href="explore.html" class="nav_link active-link">Go Explore</a>
                   </li>
                   <li class="nav_item">
                      <a href="about.html" class="nav_link">About</a>
+                  </li>
+               </ul>
+                  <li class="nav_item">
+                     <a href="#" class="nav_link">Contact</a>
                   </li>
                </ul>
                <div class="nav_close" id="nav-close">
@@ -73,7 +77,6 @@
                   </div>
                   <div class="mySlides fade">
                      <div class="numbertext">2 / 3</div>
-                     <!-- <img src="assets/img/detail-artikel/slider-borobudur/1-1.jpg"> -->
                            <video width="100%" height="377" controls>
                               <source src="assets/img/detail-artikel/slider-borobudur/Borobudur.mp4" type="video/mp4">
                            </video>
@@ -215,7 +218,6 @@
          </div>
       </section>
 
-      <!--==================== FOOTER ====================-->
       <footer class="footer">
          <div class="container row">
             <div class="footer-col">
@@ -260,9 +262,7 @@
             </div>
          </div>
       </footer>
-      
-
-      <!--========== SCROLL UP ==========-->
+   
       <a href="" class="scrollup" id="scroll-up">
          <i class="ri-arrow-up-line"></i>
       </a> 
@@ -292,10 +292,8 @@
             }
 
             for (i = 0; i < slides.length; i++) {
-               // Sembunyikan semua slide
                slides[i].style.display = "none";  
 
-               // Pause video jika slide berisi video
                let video = slides[i].querySelector("video");
                if (video) {
                      video.pause();
@@ -309,7 +307,6 @@
             slides[slideIndex-1].style.display = "block";  
             dots[slideIndex-1].className += " active";
 
-            // Play video jika slide berisi video
             let currentVideo = slides[slideIndex-1].querySelector("video");
             if (currentVideo) {
                currentVideo.play();
@@ -317,10 +314,7 @@
          }
       </script>
 
-      <!--=============== SCROLLREVEAL ===============-->
       <script src="assets/js/scrollreveal.min.js"></script>
-
-      <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
    </body>
 </html>
