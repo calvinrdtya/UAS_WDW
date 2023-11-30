@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <script src="assets/js/function.js"></script>
+
+      <title>BudayaKita</title>
+   </head>
+   <body>
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav_logo">
+               <img src="assets/img/logo-2.png" alt="" width="50%">
+            </a>
+            <div class="nav_menu" id="nav-menu">
+               <ul class="nav_list">
+                  <li class="nav_item">
+                     <a href="index.html" class="nav_link">Home</a>
+                  </li>
+                  <li class="nav_item">
+                     <a href="#artikel" class="nav_link">Artikel</a>
+                  </li>
+                  <li class="nav_item">
+                     <a href="explore.html" class="nav_link active-link">Go Explore</a>
+                  </li>
+                  <li class="nav_item">
+                     <a href="about.html" class="nav_link">About</a>
+                  </li>
+               </ul>
+               <div class="nav_close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+               <div class="nav_toggle" id="nav-toggle">
+                  <i class="ri-menu-fill"></i>
+               </div>
+            </nav>
+         </header>
+
+
+      <main class="main">
+         <section class="home section" id="home">
+            <img src="assets/img/bg.jpg" alt="" class="home_bg">
+            <div class="home_shadow"></div>
+            <div class="home_container container grid">
+               <div class="home_data">
+                  <h4 class="home_subtitle">Wonderful</h4>
+                  <h1 class="home_title" id="typed-text"></h1>
+               </div>
+               <div class="home_cards grid">
+                  <article class="home_card" data-aos="fade-right" data-aos-duration="1000">
+                     <img src="https://i.ibb.co/3BJCj7H/bali.jpg" alt="" class="home_card-img">
+                     <h3 class="home_card-title">Bali</h3>
+                  </article>
+                  <article class="home_card" data-aos="fade-up" data-aos-duration="1000">
+                     <img src="assets/img/papua.jpg" alt="" class="home_card-img">
+                     <h3 class="home_card-title">Papua</h3>
+                  </article>
+                  <article class="home_card" data-aos="fade-up" data-aos-duration="1000">
+                     <img src="assets/img/jawa.jpeg" alt="" class="home_card-img">
+                     <h3 class="home_card-title">Jawa</h3>
+                  </article>
+                  <article class="home_card" data-aos="fade-left" data-aos-duration="1000">
+                     <img src="assets/img/sumatera.jpeg" alt="" class="home_card-img">
+                     <h3 class="home_card-title">Sumatera</h3>
+                  </article>
+               </div>
+            </div>
+         </section>
+
+         <section class="about section" id="explore">
+            <div class="about_container container grid">
+               <div class="about_image" style="width: 490px; height: 790px; opacity: 0.90" data-aos="fade-right" data-aos-duration="1000">
+                  <img src="assets/img/gwk.jpeg"  class="about_img-2" style="width: 220px; height: 280px; left: 60%; top: 4%; position: absolute; border-radius: 12px"/>
+                  <img src="assets/img/prambanan.jpeg" class="about_img-1" style="width: 220px; height: 280px; left: 60%; top: 43%; position: absolute; border-radius: 12px" />
+                  <img src="assets/img/lempuyang.jpeg" class="about_img-3" style="width: 220px; height: 280px; left: 10%; top: 25%; position: absolute; border-radius: 12px" />
+                </div>
+               <div class="about_data" data-aos="fade-left" data-aos-duration="1000">
+                  <h2 class="section_title">
+                     Pesona Nusantara
+                  </h2>
+                  <p class="about_description">
+                     Kekayaan sejati tidak hanya terletak pada harta dan materi, tapi juga dalam keberagaman budaya yang kita warisi. 
+                     Kebudayaan Indonesia adalah harta karun tak ternilai yang melibatkan warna, rasa, dan irama kehidupan.
+                  </p>
+                  <a href="budaya.html" class="button pesona">
+                     Telusuri Kebudayaan <i class="ri-arrow-right-line"></i>
+                  </a>
+               </div>
+               </div>
+            </section>
+         </main>
+
+         <section class="popular section" id="artikel" style="margin-top: -6rem;">
+            <h2 class="section_title">
+               Warisan <br>
+               Kebudayaan Indonesia
+            </h2>
+            <div class="popular_container container grid">
+               <article class="popular_card" data-aos="fade-up" data-aos-duration="1000">
+                  <div class="popular_image">
+                     <img src="assets/img/borobudur.jpeg" alt="" class="popular_img">
+                     <div class="popular_shadow"></div>
+                  </div>
+                  <a href="borobudur.html">
+                     <h2 class="popular_title">
+                        Candi Borobudur
+                     </h2>
+                  </a>
+                  <div class="popular_location">
+                     <i class="ri-map-pin-line"></i>
+                     <span>Magelang, Jawa Tengah</span>
+                  </div>
+               </article>
+               <article class="popular_card" data-aos="fade-up" data-aos-duration="1000">
+                  <div class="popular_image">
+                     <img src="assets/img/kecak.jpeg" alt="" class="popular_img">
+                     <div class="popular_shadow"></div>
+                  </div>
+                  <a href="">
+                     <h2 class="popular_title">
+                        Tari Kecak
+                     </h2>
+                  </a>
+                  <div class="popular_location">
+                     <i class="ri-map-pin-line"></i>
+                     <span>Bali, Indonesia</span>
+                  </div>
+               </article>
+               <article class="popular_card" data-aos="fade-up" data-aos-duration="1000">
+                  <div class="popular_image">
+                     <img src="assets/img/angklung.jpeg" alt="" class="popular_img">
+                     <div class="popular_shadow"></div>
+                  </div>
+                  <a href="">
+                     <h2 class="popular_title">
+                        Angklung
+                     </h2>
+                  </a>
+                  <div class="popular_location">
+                     <i class="ri-map-pin-line"></i>
+                     <span>Jawa Barat</span>
+                  </div>
+               </article>
+               <article class="popular_card" data-aos="fade-up" data-aos-duration="1000">
+                  <div class="popular_image">
+                     <img src="assets/img/wayang.jpeg" alt="" class="popular_img">
+                     <div class="popular_shadow"></div>
+                  </div>
+                  <a href="">
+                     <h2 class="popular_title">
+                        Wayang Kulit
+                     </h2>
+                  </a>
+                  <div class="popular_location">
+                     <i class="ri-map-pin-line"></i>
+                     <span>Jawa</span>
+                  </div>
+               </article>
+               <article class="popular_card" data-aos="fade-up" data-aos-duration="1000">
+                  <div class="popular_image">
+                     <img src="assets/img/keris.jpeg" alt="" class="popular_img">
+                     <div class="popular_shadow"></div>
+                  </div>
+                  <a href="keris.html">
+                     <h2 class="popular_title">
+                        Keris
+                     </h2>
+                  </a>
+                  <div class="popular_location">
+                     <i class="ri-map-pin-line"></i>
+                     <span>Jawa</span>
+                  </div>
+               </article>
+               <article class="popular_card" data-aos="fade-up" data-aos-duration="1000">
+                  <div class="popular_image">
+                     <img src="assets/img/tenun.jpeg" alt="" class="popular_img">
+                     <div class="popular_shadow"></div>
+                  </div>
+                  <a href="">
+                     <h2 class="popular_title">
+                        Tenun
+                     </h2>
+                  </a>
+                  <div class="popular_location">
+                     <i class="ri-map-pin-line"></i>
+                     <span>Indonesia</span>
+                  </div>
+               </article>
+            </div>
+         </section>
+
+         <section class="explore section" id="">
+            <div class="explore_container">
+               <div class="explore_image">
+                  <img src="assets/img/batik.png" alt="" class="explore_img">
+                  <div class="explore_shadow"></div>
+               </div>
+               <div class="explore_content container grid">
+                  <div class="explore_data">
+                     <h2 class="section_title">
+                        Batik Mega Mendung
+                     </h2>
+                     <p class="explore_description">
+                        Salah satu jenis batik yang terkenal dan berasal dari daerah Cirebon, Jawa Barat, Indonesia. Batik ini memiliki karakteristik motif yang khas, yaitu motif awan dan langit yang membentuk pola mendung
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+      <section class="popular section pt-10" id="artikel">
+         <!-- <h2 class="section_title">
+            Warisan <br>
+            Kebudayaan Indonesia
+         </h2> -->
+         <div class="popular_container container grid">
+            <article class="popular_card" data-aos="fade-up" data-aos-duration="1000">
+               <div class="popular_image">
+                  <img src="assets/img/karapan-sapi.jpeg" alt="" class="popular_img">
+                  <div class="popular_shadow"></div>
+               </div>
+               <a href="borobudur.html">
+                  <h2 class="popular_title">Karapan Sapi</h2>
+               </a>
+               <div class="popular_location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Madura</span>
+               </div>
+            </article>
+            <article class="popular_card" data-aos="fade-up" data-aos-duration="1000">
+               <div class="popular_image">
+                  <img src="assets/img/turonggo-yakso.jpeg" alt="" class="popular_img">
+                  <div class="popular_shadow"></div>
+               </div>
+               <a href="borobudur.html">
+                  <h2 class="popular_title">Tari Turonggo Yakso</h2>
+               </a>
+               <div class="popular_location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Trenggalek, Jawa Timur</span>
+               </div>
+            </article>
+            <article class="popular_card" data-aos="fade-up" data-aos-duration="1000">
+               <div class="popular_image">
+                  <img src="assets/img/ngaben.jpeg" alt="" class="popular_img">
+                  <div class="popular_shadow"></div>
+               </div>
+               <a href="borobudur.html">
+                  <h2 class="popular_title">Upacara Ngaben</h2>
+               </a>
+               <div class="popular_location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Bali</span>
+               </div>
+            </article>
+         </div>
+      </section>
+      
+      <footer class="footer">
+         <div class="container row">
+            <div class="footer-col">
+               <h4>BudayaKu</h4>
+               <ul>
+                  <p>BudayaKu lahir dari tekad untuk merayakan, melestarikan, dan memajukan kekayaan budaya Indonesia.</p>
+               </ul>
+            </div>
+            <div class="footer-col">
+               <h4>Explore</h4>
+               <ul>
+                  <li><a href="#">Tradisi</a></li>
+                  <li><a href="#">Ritual</a></li>
+                  <li><a href="#">Festival Budaya</a></li>
+                  <li><a href="#">Kesenian</a></li>
+               </ul>
+            </div>
+            <div class="footer-col">
+               <h4>get help</h4>
+               <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">Artikel</a></li>
+               </ul>
+            </div>
+            <div class="footer-col">
+               <h4>follow us</h4>
+               <div class="social-links">
+                  <a href="#"><i class="ri-facebook-line"></i>
+                  <a href="#"><i class="ri-instagram-line"></i>
+                  <a href="#"><i class="ri-twitter-line"></i>
+                  <a href="#"><i class="ri-youtube-line"></i>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="container">
+               <div class="center" style="color: white;">
+                  Copyright &copy; 2023 BudayaKu. All right reserved
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- <a href="" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>  -->
+      <!-- <button onclick="topFunction()" id="btn-top" title="Go to top" class="scrollup"><i class="ri-arrow-up-line"></i></button> -->
+      <button type="button" class="btn btn-floating btn-lg back-to-top" id="bbtt" title="back"><i class="ri-arrow-up-line"></i></button>
+
+      <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+
+      <script src="assets/js/main.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+      <script>
+      const texts = ["INDONESIA", "NUSANTARA"];
+      let textIndex = 0;
+      let charIndex = 0;
+      const speed = 300; 
+
+      function typeWriter() {
+         if (charIndex < texts[textIndex].length) {
+            document.getElementById("typed-text").innerHTML += texts[textIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(typeWriter, speed);
+         } else {
+            setTimeout(eraseText, 1000);
+         }
+      }
+
+      function eraseText() {
+         if (charIndex > 0) {
+            let currentText = texts[textIndex].substring(0, charIndex - 1);
+            document.getElementById("typed-text").innerHTML = currentText;
+            charIndex--;
+            setTimeout(eraseText, speed / 2);
+         } else {
+            textIndex = (textIndex + 1) % texts.length;
+            setTimeout(typeWriter, speed);
+         }
+      }
+      window.onload = function () {
+         typeWriter();
+      };
+
+      window.onscroll = function() {
+            toggleButtonVisibility();
+        };
+
+        let mybutton = document.getElementById("bbtt");
+         if (mybutton) {
+            mybutton.style.display = "none";
+         }
+         window.onscroll = function () {
+            scrollFunction();
+         };
+         function scrollFunction() {
+            if (
+               document.body.scrollTop > 20 ||
+               document.documentElement.scrollTop > 20
+            ) {
+               mybutton.style.display = "block";
+            } else {
+               mybutton.style.display = "none";
+            }
+         }
+         if (mybutton) {
+            mybutton.addEventListener("click", backToTop);
+         }
+         function backToTop() {
+            document.documentElement.scrollTo({
+               top: 0,
+               behavior: 'smooth'
+            });
+         }
+
+      //   function toggleButtonVisibility() {
+      //       var mybutton = document.getElementById("btn-top");
+      //       if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+      //           mybutton.style.display = "block";
+      //       } else {
+      //           mybutton.style.display = "none";
+      //       }
+      //   }
+      //   function topFunction() {
+      //       window.scrollTo({
+      //           top: 0,
+      //           behavior: "smooth"
+      //       });
+      //   }
+      </script>
+   </body>
+</html>

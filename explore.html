@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Explore</title>
+
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/explore.css">
+  </head>
+<body>
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav_logo">
+            <img src="assets/img/logo-2.png" alt="" width="50%">
+         </a>
+         <div class="nav_menu" id="nav-menu">
+            <ul class="nav_list">
+               <li class="nav_item">
+                  <a href="index.html" class="nav_link">Home</a>
+               </li>
+               <li class="nav_item">
+                  <a href="#artikel" class="nav_link">Artikel</a>
+               </li>
+               <li class="nav_item">
+                  <a href="explore.html" class="nav_link active-link">Go Explore</a>
+               </li>
+               <li class="nav_item">
+                  <a href="about.html" class="nav_link">About</a>
+               </li>
+            </ul>
+            <div class="nav_close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+            <div class="nav_toggle" id="nav-toggle">
+               <i class="ri-menu-fill"></i>
+            </div>
+      </nav>
+   </header>
+    
+        <div class="text-center">
+            <div class="title_about">
+                <!-- <h4>Explore</h4>
+                <h2 id="typed-text"></h2> -->
+            </div>
+            <!-- <div class="jumbo_shadow"></div> -->
+        </div>
+
+            <section class="about about_color section" id="explore">
+               <h2 class="section_title">Cari Tahu Tentang Kebudayaan</h2>
+               <h4 class="theme_title" style="margin-top: -1rem;">With The New Theme Colors</h4>
+               <hr class="horizontal-line" style="margin-bottom: 4rem;">
+               <div class="container fr">
+                  <form>
+                     <h1>Contact Us Form</h1>
+                     <h4>Type Your Message Here...</h4>
+                        <textarea required></textarea>
+                        <!-- <input type="text" value="Send" id="button"> -->
+                  </form>
+               </div>
+            </section>
+
+         <footer class="footer">
+            <div class="container row">
+               <div class="footer-col">
+                  <h4>BudayaKu</h4>
+                  <ul>
+                     <p>BudayaKu lahir dari tekad untuk merayakan, melestarikan, dan memajukan kekayaan budaya Indonesia.</p>
+                  </ul>
+               </div>
+               <div class="footer-col">
+                  <h4>Explore</h4>
+                  <ul>
+                     <li><a href="#">Tradisi</a></li>
+                     <li><a href="#">Ritual</a></li>
+                     <li><a href="#">Festival Budaya</a></li>
+                     <li><a href="#">Kesenian</a></li>
+                  </ul>
+               </div>
+               <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                     <li><a href="#">FAQ</a></li>
+                     <li><a href="about.html">About</a></li>
+                     <li><a href="#">Explore</a></li>
+                     <li><a href="#">Artikel</a></li>
+                  </ul>
+               </div>
+               <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                     <a href="#"><i class="ri-facebook-line"></i>
+                     <a href="#"><i class="ri-instagram-line"></i>
+                     <a href="#"><i class="ri-twitter-line"></i>
+                     <a href="#"><i class="ri-youtube-line"></i>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-bottom">
+               <div class="container">
+                  <div class="center" style="color: white;">
+                     Copyright &copy; 2023 BudayaKu. All right reserved
+                  </div>
+               </div>
+            </div>
+         </footer>
+
+      <script src="assets/js/scrollreveal.min.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script src="js/script.js"></script>
+      <script>
+         AOS.init();
+       </script>
+      <script>
+         const texts = ["BudayaKu", "INDONESIA"];
+         let textIndex = 0;
+         let charIndex = 0;
+         const speed = 300; 
+
+         function typeWriter() {
+            if (charIndex < texts[textIndex].length) {
+               document.getElementById("typed-text").innerHTML += texts[textIndex].charAt(charIndex);
+               charIndex++;
+               setTimeout(typeWriter, speed);
+            } else {
+               setTimeout(eraseText, 1000);
+            }
+         }
+
+         function eraseText() {
+            if (charIndex > 0) {
+               let currentText = texts[textIndex].substring(0, charIndex - 1);
+               document.getElementById("typed-text").innerHTML = currentText;
+               charIndex--;
+               setTimeout(eraseText, speed / 2);
+            } else {
+               textIndex = (textIndex + 1) % texts.length;
+               setTimeout(typeWriter, speed);
+            }
+         }
+         window.onload = function () {
+         typeWriter();
+         };
+   </script>
+  </body>
+</html>
+
+
+
+
